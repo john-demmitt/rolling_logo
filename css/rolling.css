@@ -1,0 +1,41 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+}
+
+.container {
+    margin: 2.5%;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    /* transform-style: preserve-3d;
+    perspective: 200px;*/
+}
+
+.card {
+    width: 25%;
+    position: absolute;
+    perspective: 1000px;
+}
+
+svg {
+    display: block;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+svg#trans {
+    visibility: visible;
+}
+
+svg#res {
+    visibility: visible;
+}
+
+svg#logo {
+    visibility: visible;
+}

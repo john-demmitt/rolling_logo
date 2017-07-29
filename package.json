@@ -1,0 +1,12 @@
+{
+  "name": "rolling_logo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/john-demmitt/rolling_logo.git",
+  "author": "<john_demmitt@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.3.0",
+    "htmlhint": "^0.9.13"
+  }
+}
