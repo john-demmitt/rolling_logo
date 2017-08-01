@@ -8,9 +8,9 @@ $(document).ready(function() {
     var star = $(".star")
     var tl = new TimelineMax();
 
-    tl.staggerFromTo([resL, transL], 5, { x: -dWidth, opacity: 0, ease:false }, { x: dCenter, opacity: 1 },  0.3, "rollin")
-    .to(star, 5, {rotation:1800, transformOrigin: "50% 50%"}, "rollin");
-    
+    tl.staggerFromTo(resL, 1.4, { x: -dWidth, opacity: 0, ease: false }, { x: dCenter, opacity: 1 }, -0.175, "rollin")
+        .staggerFromTo(transL, 1.4, { x: -dWidth, opacity: 0, ease: false }, { x: dCenter, opacity: 1 }, -0.1, "rollin")
+        .to(star, 3.7, { rotation: 2400, transformOrigin: "50% 50%", ease: "Power4.easeOut" }, "rollin");
 
 
 
