@@ -37,3 +37,7 @@ svg#res {
 svg#logo {
     visibility: visible;
 }
+
+.resW, .transW {
+    opacity:0;
+}

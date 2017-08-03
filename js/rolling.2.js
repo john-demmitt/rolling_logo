@@ -5,11 +5,11 @@ $(document).ready(function() {
     var resL = $("#res g");
     var dWidth = $(document).width();
     var dCenter = 0.375 * dWidth;
-    var star = $(".star");
+    var star = $(".star")
     var tl = new TimelineMax();
 
-    tl.staggerFromTo(resL, 1.4, { x: -dWidth, opacity: 0, ease: false }, { x: dCenter, opacity: 1 }, -0.175, "rollin")
-        .staggerFromTo(transL, 1.4, { x: -dWidth, opacity: 0, ease: false }, { x: dCenter, opacity: 1 }, -0.1, "rollin")
+    tl.staggerTo(resL, 1.4, { x: dCenter }, -0.175, "rollin")
+        .staggerTo(transL, 1.4, { x: dCenter }, -0.1, "rollin")
         .to(star, 3.7, { rotation: 2400, transformOrigin: "50% 50%", ease: "Power4.easeOut" }, "rollin");
 
 
