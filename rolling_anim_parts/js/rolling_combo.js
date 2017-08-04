@@ -13,12 +13,19 @@ $(document).ready(function() {
     var all = $([resL, resW, transL, transW]);
     var tl = new TimelineMax();
 
-    tl.staggerFrom(resL, 4.2, { x: -offscreen, rotation: -2160, transformOrigin: "50% 50%", ease: "Power3.easeOut"}, -0.5250, "rollin")
-        .staggerFrom(transL, 4.2, { x: -offscreen, rotation: -2160, transformOrigin: "50% 50%", ease: "Power3.easeOut" }, -0.3, "rollin")
-        .staggerFrom(resW, 4.2, { x: -offscreen, rotation: -2160, transformOrigin: "50% 50%", ease: "Power3.easeOut"}, -0.5250, "rollin")
-        .staggerFrom(transW, 4.2, { x: -offscreen, rotation: -2160, transformOrigin: "50% 50%", ease: "Power3.easeOut"}, -0.3, "rollin")
-        .from(letters, 4.2, {opacity:0, ease: "Power2.easeOut"}, "rollin+=2")
-        .from(wheels, 4.2, {opacity:1, ease: "Power2.easeOut"}, "rollin+=2");
+console.log(letters);
+console.log(wheels);
+console.log(dWidth);
+
+    tl.staggerFrom(resL, 2, { x: -offscreen, rotation: -2160, transformOrigin: "50% 50%", ease: "Power0.easeOut"}, -0.2, "rollin")
+        .staggerFrom(transL, 2, { x: -offscreen, rotation: -2160, transformOrigin: "50% 50%", ease: "Power0.easeOut" }, -0.1, "rollin")
+        .staggerFrom(resW, 2, { x: -offscreen, rotation: -2160, transformOrigin: "50% 50%", ease: "Power0.easeOut"}, 0.2, "rollin")
+        .staggerFrom(transW, 2, { x: -offscreen, rotation: -2160, transformOrigin: "50% 50%", ease: "Power0.easeOut"}, 0.1, "rollin")
+        .set(letters, {autoAlpha:1})
+        .staggerFrom(resL, 0.75, {opacity:0, ease: "Power0.easeOut"}, -0.2, "rollin+=1.25")
+        .staggerFrom(resW, 0.75, {opacity:1, ease: "Power0.easeOut"}, 0.2, "rollin+=1.25")
+        .staggerFrom(transL, 0.75, {opacity:0, ease: "Power0.easeOut"}, -0.12, "rollin+=1.25")
+        .staggerFrom(transW, 0.75, {opacity:1, ease: "Power0.easeOut"}, 0.12, "rollin+=1.25");
 
 
 
