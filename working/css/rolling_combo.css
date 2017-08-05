@@ -12,8 +12,11 @@ body {
 }
 
 .card {
-    width: 100%;
-    position: absolute;
+    height: 100vh;
+    background: url("../IMG_7947-77.JPG") no-repeat cover;
+    display: flex;
+    vertical-align: center;
+    align-content: center;
 }
 
 svg {
