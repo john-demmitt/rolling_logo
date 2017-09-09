@@ -1,31 +1,32 @@
-html,
 body {
-    width: 100vw;
-    height: 100vh;
     background-color: grey;
+    background-image: url('../IMG_7947-77.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 100vh;
+    width: 100vw;    
 }
 
 .container {
-    width: 100%;
     height: 100%;
     position: relative;
+    width: 100%;        
 }
 
 .card {
-    height: 100vh;
-    background: url("../IMG_7947-77.JPG") no-repeat cover;
+    align-items: center;    
     display: flex;
-    vertical-align: center;
-    align-content: center;
+    height: 100%;    
+    justify-content: center;
 }
 
 svg {
-
-    width:100%;
-    display: block;
-    padding: 0;
-    margin: 0;
     border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;    
+    width:100%;
+
 }
 
 
